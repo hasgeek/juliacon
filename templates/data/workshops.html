@@ -1,0 +1,29 @@
+{% 
+  set event = {
+      'title' : 'Workshops'
+    , 'when'  : ''
+    , 'blurb' : ''
+  }
+%}
+{% 
+  set nav = [
+    {
+      'display': 'Sessions'
+      , 'link' : 'workshops#sessions'
+    }
+    , {
+      'display': 'Venue'
+      , 'link' : 'workshops#workshop-venue'
+    }
+  ]
+%}
+{% from theme("data/sessions.html") import workshops %}
+{% 
+  set session = {
+      'id'    : 'sessions'
+    , 'label' : 'Sessions'
+    , 'link'  : 'workshops#sessions'
+    , 'list'  : workshops.values()
+    , 'types' : types
+  }
+%}

@@ -1,0 +1,48 @@
+{% extends theme('layouts/page.html') %}
+{%
+  set page = {
+    'title'               : '' ,
+    'description'         : '' ,
+    'sections'            : [
+      ('event-summary',       '') ,
+      ('featured-speakers',  'primary') ,
+      ('venue-summary',  '') ,
+      ('sponsors-summary',  'secondary')
+    ]
+  }
+%}
+
+{% block header %}
+  <header>
+    <div class="site-navbar">
+      <div class="phone-menu clearfix">
+        <h1 class="nav-logo link-silent"><a href="#page" class="smooth-scroll"><img src="{{ theme_static('img/logo.svg') }}"/></a></h1>
+        <p id="menu-btn" class="menu regular bold" data-target="#dropdown-menu"><i class="fa fa-bars"></i></p>
+      </div>
+      <nav class="nospace clearfix off" id="dropdown-menu">
+        <ul class="link-silent clearfix secondary">
+          <li><a href="#about" class="smooth-scroll">Announcements</a></li>
+          <li><a href="#speakers" class="smooth-scroll">Speakers</a></li>
+          <li><a href="#venue" class="smooth-scroll">Venue</a></li>
+          <li><a href="#sponsors" class="smooth-scroll">Sponsors</a></li>
+          <li><a href="code-of-conduct">Code of conduct</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="container-fluid">
+      <h1 class="logo-wrapper nospace">
+        <a class="ir center-block logo" href="/2015">
+          JuliaCon 2015
+        </a>
+      </h1>
+      <div class="text-center heading-text push-three-bottom">
+        <h2 class="large text1">Conference and Workshops on Julia</h2>
+        <h3 class="prose-type secondary text2">9 &amp; 10 October 2015</h3>
+        <h3 class="prose-type secondary text2">TERI, Domlur, Bangalore</h3>
+<!--           <a href="" class="space-one-top button button-on-dark regular dark ticket-btn" title="JuliaCon 2015 Tickets on Explara" target="_blank">Buy Tickets</a> -->
+        <p class="scrolldown-box"><a href="#about" class="space-one-top smooth-scroll fa fa-angle-double-down scroll-down"></a><p>
+      </div>
+    </div>
+  {% block banner %}{% endblock %}
+  </header>
+{% endblock %}

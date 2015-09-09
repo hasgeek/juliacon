@@ -1,0 +1,32 @@
+{% 
+  set event = {
+      'title' : 'Conference'
+    , 'blurb' : '<p><a href="http://julialang.org/" class="orange" target="_blank">Julia</a> is a high-level dynamic language that is different from other such languages in that it is also really fast. Julia was invented out of <a href="http://julialang.org/blog/2012/02/why-we-created-julia/" class="orange" target="_blank">greed to do more</a>. It inherits design tenets from the Lisp, builds on the good parts of C, MATLAB, R, Python and Ruby to create a language that is performant and highly productive at the same time. <p>We are proud to announce the first ever JuliaCon India. It will feature the creators of the language Jeff Bezanson, Stefan Karpinski, and Viral B Shah, and an enthusiastic contingent of Julia programmers in India. It\'s a two-day event consisting of a day-long conference on 9th October and a post-conference workshop on 10th October.</p>'
+  }
+%}
+{% 
+  set nav = [
+    {
+      'display': 'Schedule'
+      , 'link' : 'conference#schedule'
+    }
+    , {
+      'display': 'Talks'
+      , 'link' : 'conference#talks'
+    }
+    , {
+      'display': 'Venue'
+      , 'link' : 'conference#conference-venue'
+    }
+  ]
+%}
+{% from theme("data/sessions.html") import talks %}
+{% 
+  set session = {
+      'id'    : 'talks'
+    , 'label' : 'Talks'
+    , 'link'  : 'conference#talks'
+    , 'list'  : talks.values()
+    , 'types' : types
+  }
+%}

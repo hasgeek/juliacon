@@ -1,0 +1,142 @@
+{% from "baseframe/components.html" import networkbar with context -%}
+
+<!DOCTYPE html>
+<!--[if IE 8]>         <html lang="en" class="no-js lt-ie9">     <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" class="no-js{%- if config['DEBUG'] %} wf-active{% endif %}">        <!--<![endif]-->
+<head>
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="{% if page.description %}{{ page.description }}{% else %}JuliaCon: Julia Conference in Bangalore, India{% endif %}">
+<meta name="author" content="HasGeek and friends">
+
+<meta property="og:title" content="JuliaCon 2015{% if page.title %} — {{ page.title }}{% endif %}"/>
+<meta property="og:image" content="{{ request.url_root[:-1] }}{{ theme_static('img/logo.png') }}"/>
+<meta property="og:url" content="{{ request.url }}"/>
+<meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}JuliaCon: Julia Conference in Bangalore, India{% endif %}"/>
+
+<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+
+<title>{% if page.title %}{{ page.title }} — {% endif %}JuliaCon 2015</title>
+
+{%- if _theme %}
+  {% assets "css_" + _theme -%}
+    <link rel="stylesheet" href="{{ ASSET_URL }}"/>
+  {% endassets -%}
+{%- endif %}
+
+<!-- Leaflet -->
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/leaflet/0.6.3/leaflet.min.css" />
+<!--[if lte IE 8]>
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/leaflet/0.6.3/leaflet.ie.css" />
+<![endif]-->
+<link href='https://fonts.googleapis.com/css?family=Cardo|Montserrat' rel='stylesheet' type='text/css'>
+
+<script src="{{ theme_static('js/vendor/modernizr-2.6.2.js') }}"></script>
+
+<!-- <link rel="stylesheet" href="{{ theme_static('css/fonts.css') }}"> -->
+<script type="text/javascript" src="//use.typekit.net/gfr4qlr.js"></script>
+<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+<script>window.jQuery || document.write('<script src="{{ theme_static('js/vendor/jquery-1.10.2.min.js') }}"><\/script>')</script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/leaflet/0.6.3/leaflet.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/mustache.js/2.1.3/mustache.min.js"></script>
+</head>
+<body>
+  
+<div id="page">
+{% block header %}
+  <div class="container-fluid fill-primary">
+    <div class="row-fluid">
+      <div class="col-sm-2 space-one">
+        <a class="ir logo-small" href="/2015">
+        JSFoo 2015</a>
+      </div>
+      <div class="col-sm-6 space-two-top">
+        <h2 class="regular space-half">Conference and Workshops on Julia</h2>
+        <h3 class="prose-type secondary space-half">9 &amp; 10 October 2015</h3>
+        <h3 class="prose-type secondary space-half">TERI, Domlur, Bangalore</h3>
+      </div>
+      <div class="col-sm-4 space-three-top space-one-bottom">
+        <div class="flushright center-xs">
+        {% block ticket_button %}
+          <a href="https://in.explara.com/e/" class="button regular" title="JuliaCon 2015 Tickets on Explara" target="_blank">Buy Tickets</a>
+        {% endblock %}
+        </div>
+      </div>
+    </div>
+  {% block banner %}{% endblock %}
+  </div>
+{% endblock %}
+
+{% block content %}
+  {% for item in page.sections  %}
+    {% with %}
+      {% if item is string %} {% set section = item %} {% else %} {% set section, background = item %} {% endif %}
+      {% include theme('sections/'+section+'.html') %}
+    {% endwith %}
+  {% endfor %}
+{% endblock %}
+
+
+<footer class="page-footer page-section clearfix">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <div class="text-center regular space-four-bottom">
+          <p class="regular link-silent">All organisers, sponsors and attendees are required to follow the conference <a href="code-of-conduct" class="softred">code of conduct</a>.</p>
+          <p class="regular link-silent">JuliaCon is a conference by <a href="http://hasgeek.com" class="softred" target="_blank">HasGeek</a> and <a href="http://juliacomputing.com" class="softred" target="_blank">JuliaComputing</a>. Copyright &copy; 2015. All rights reserved.</p>
+          <p class="regular link-silent">For further information / sponsorship: <a href="mailto:info@hasgeek.com">info@hasgeek.com</a> / <a href="tel: +91-767-633-2020">+91-767-633-2020</a></p>
+<!--           <div class="legible space-one-top">
+            <ul class="link-silent list-plain">
+              <li class="inline-block gap-1q"><a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter"></i></a></li>
+              <li class="inline-block gap-1q"><a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+              <li class="inline-block gap-1q"><a href="https://www.youtube.com/user/hasgeek" target="_blank"><i class="fa fa-youtube"></i></a></li>
+              <li class="inline-block gap-1q"><a href="https://www.flickr.com/photos/hasgeek/sets/" target="_blank"><i class="fa fa-flickr"></i></a></li>
+            </ul>
+          </div> -->
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+</div><!-- #page -->
+{%- if not config['DEBUG'] %}
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+{%- endif %}
+
+{%- if _theme %}
+  {% assets "js_" + _theme -%}
+    <script src="{{ ASSET_URL }}"></script>
+  {% endassets -%}
+{%- endif %}
+
+<script>
+// Google Analytics
+if (location.hostname == 'julicon.in') {
+  var _gaq=[['_setAccount','UA-19123154-15'],['_trackPageview']];
+  (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+  g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+  s.parentNode.insertBefore(g,s)}(document,'script'));
+}
+</script>
+
+<!-- Prompt IE 6 users to install Chrome Frame. -->
+<!-- chromium.org/developers/how-tos/chrome-frame-getting-started -->
+<!--[if lt IE 7 ]>
+  <script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
+  <script>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
+<![endif]-->
+<script>
+  $('#show-more').click(function() {
+    $(this).toggleClass('fa-chevron-circle-down');
+    $(this).toggleClass('fa-chevron-circle-up');
+    $('#event-desc').toggleClass('always-hidden');
+  });
+</script>
+</body>
+</html>

@@ -1,0 +1,125 @@
+/* ========= */
+/* = Theme = */
+/* ========= */
+
+body{
+    background-color: $white; 
+    color: #333;
+}
+
+.fill-darkyellow a:hover,
+.fill-darkyellow a:focus {
+    text-decoration: none;
+    border-color: $dark;
+    color: $dark;
+}
+
+a#editions{
+    background-color: $primary-dark;
+    padding: 0.3em 0.9em 0.45em;
+    border-radius: 3px;
+    font-size: 0.8rem;
+}
+a#editions>i{
+    padding-left: 0.2em;
+}
+#editions + .dropdown-menu{
+    margin: 5px 0 0;
+    background-color: $primary; 
+}
+#editions + .dropdown-menu>li {
+    width: 100%;
+    & > a {
+        color: $primary-text;
+    }
+    & > a:hover{
+        background-color: $primary-dark;
+        color: $darkyellow;
+    }
+}
+
+.link-silent a,
+a.link-silent   { border-bottom: none; }
+
+hr{
+    border-top: 1px solid #DAD6D0;
+}
+
+.prose.prose-type a { border-bottom: none; text-decoration: none; }
+
+
+/*  Colours  */
+
+.black          { color: #000000 !important; }
+.dark           { color: #444444 !important; }
+.gray           { color: #AAAAAA !important; }
+.lightgray      { color: #CCCCCC !important; }
+.light          { color: #EEEEEE !important; }
+.red            { color: #FF3333 !important; }
+.white          { color: #FFFFFF !important; }
+.faded          { color: rgba(255,255,255,.8) !important; }
+
+.blue           { color: #4487A6 !important; }
+.skyblue        { color: #68CFFF !important; }
+.silver         { color: #CFE2E0 !important; }
+.orange         { color: #CF6F01 !important; }
+.yellow         { color: #E6A813 !important; }
+
+.darkblue       { color: $darkblue !important; }
+.darkyellow     { color: $darkyellow !important; }
+.lightblue      { color: $lightblue !important; }
+.lightyellow    { color: $lightyellow !important; }  
+.softred        { color: #EF767A !important; } 
+.darkcyan       { color: #18a999 !important; } 
+
+
+.fill-white     { background-color: #FFFFFF !important; color: #444; }
+.fill-dark      { background-color: #DED6C2 !important; color: #333; }
+.fill-dark-hud  { background-color: rgba(0,0,0,0.1) !important; color: #000; }
+.fill-dark      { background-color: #DED6C2 !important; color: #333; }
+.fill-primary   { background-color: $primary !important; color: $primary-text; }
+.fill-primary-dark   { background-color: $primary-dark !important; color: $primary-text; }
+.fill-secondary   { background-color: $secondary !important; color: $primary-text; }
+.fill-silver-hud{ background-color: rgba(255,255,255,0.4) !important; color: #222; }
+.fill-redgray   { background-color: #EFE7E6 !important; color: #222020; }
+/*.fill-yellow    { background-color: rgb(240, 219, 79) !important; color: #000; }
+.fill-lightyellow    { background-color: #EBEB7E !important; color: #000; }
+.fill-darkblue  { background-color: #353F67 !important; color: #FFF; }
+.fill-blue      { background-color: #43609E !important; color: #000; }
+.fill-lightblue { background-color: #6086C4 !important; color: #000; }*/
+.fill-blueprint { 
+    background-repeat: repeat;
+    background-size: 12px; 
+    background-color: #4487A6 !important; 
+    background-image: url(../img/blueprint_mesh.png);
+    color: #FFF;
+}
+.fill-cream     { background-color: #F6F7BD !important; color: #000; }
+.fill-green     { background-color: #80BCA3 !important; color: #000; }
+.fill-brown       { background-color: #241C1B !important; color: #FFF; }
+.fill-orange    { background-color: #E6AC27 !important; color: #000; }
+.fill-brown     { background-color: #655643 !important; color: #FFF; }
+
+.fill-blue     { background-color: #4487A6 !important; color: #FFF; }
+.fill-skyblue     { background-color: #68CFFF !important; color: #000; }
+.fill-silver    { background-color: #CFE2E0 !important; color: #333; }
+.fill-orange    { background-color: #CF6F01 !important; color: #000; }
+.fill-yellow     { background-color: #E6A813 !important; color: #FFF; }
+.fill-gray     { background-color: #EFEFEF !important; color: #000; }
+
+.fill-lightblue {  background-color: $lightblue !important; color: $dark; }
+.fill-darkblue {  background-color: $darkblue !important; color: $dark; }
+.fill-lightyellow {  background-color: $lightyellow !important; color: $dark; }
+.fill-darkyellow {  background-color: $darkyellow !important; color: $dark; }
+
+.shadow-orange{ text-shadow: 0.1em 0.1em #E6AC27;}
+.fade-red-to-dark {
+    background-image: -webkit-linear-gradient(top,       #BB3311 20%, #121212);
+    background-image:    -moz-linear-gradient(top,       #BB3311 20%, #121212);
+    background-image:      -o-linear-gradient(top,       #BB3311 20%, #121212);
+    background-image:         linear-gradient(top bottom,#BB3311 20%, #121212);
+}
+
+.leaflet-popup-content-wrapper, .leaflet-popup-tip {
+    background: #EEEDE3 !important; 
+}

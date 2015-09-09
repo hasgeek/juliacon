@@ -1,0 +1,21 @@
+{
+    "application": "eventframe",
+    "identifier": "juliacon2015",
+    "name": "JuliaCon 2015",
+    "author": "Vidya R",
+    "description": "JuliaCon Bangalore 2015 website template",
+    "license": "All rights reserved",
+    "doctype": "html5",
+    "options": {
+        "assets_css": [
+            "css/vendor/bootstrap.min.css",
+            "css/font-awesome.css",
+            "css/main.css"
+        ],
+        "assets_js": [
+            "js/vendor/bootstrap.min.js",
+            "js/maps.js",
+            "js/main.js"
+        ]
+    }
+}

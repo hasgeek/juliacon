@@ -1,0 +1,15 @@
+{% with %}
+  {% from theme("data/conference-venue.html") import venues %}
+  {% 
+    set venues = {
+        'id'    : 'venue'
+      , 'title' : 'Venue'
+      , 'link'  : 'conference#venue'
+      , 'list'  : [venues['venue1']]
+      , 'types' : types
+      , 'showdirections' : false
+      , 'moreinfolink' : 'venue'
+    }
+  %}
+  {% include theme("layouts/venue.html") %}
+{% endwith %}

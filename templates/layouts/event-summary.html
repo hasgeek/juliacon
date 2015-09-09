@@ -1,0 +1,14 @@
+<section id="about" class="page-section{% if background %} fill-{{ background }}{% endif %}">
+  <div class="container">
+    <div class="col-xs-12 section-title">
+      <div class="extralarge space-three-top all-caps prose-type bold text-center"><h2>{{ event.title|safe }}</h2></div>
+    </div>
+    <div class="col-xs-12">
+      <div class="legible-prose calm nopad-xs space-three link-silent">
+        {% if event.blurb %}
+          <span>{{ event.blurb|safe }}</span>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</section> 

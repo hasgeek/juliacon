@@ -1,0 +1,43 @@
+<section id="{{ session.id }}" class="page-section clearfix{% if background %} fill-{{ background }}{% endif %}">
+<div class="container">
+  <div class="row">     
+    <div class="col-lg-12">
+        <h2 class="large all-caps text-center push-two">{{ session.label }}</h2>
+    </div>
+  </div>
+  {% for item in session.list|sort(attribute='count') %}
+    <div id="{{ item.id }}" class="row push-one-bottom pad-3q">
+      <div class="col-xs-12">
+        <div class="row">
+          <div class="col-md-3 col-sm-4 col-xs-12 legible-prose">
+            <div class="row">
+              <div class="col-xs-4 col-sm-12 push-line-top">
+                <img src="{{item.photo}}" alt="">
+              </div>
+              <div class="col-xs-12">
+                <h4 class="regular prose-type calm all-caps push-half-top nospace-bottom white">{{ item.speaker|safe }}</h4>
+                {% if item.twitter %}<div class="link-silent regular-prose"><a href="">@{{ item.twitter }}</a></div>{% endif %}
+                <p class="secondary italic push-half-bottom darkyellow">{{ item.designation|safe }}</p>
+                {% if item.sponsor %}<div class="lightblue secondary-prose link-silent"><em>Sponsored session by <a href="{{ item.sponsor_link }}" target="_blank">{{ item.sponsor }}</a></em></div>{% endif %}
+              </div>
+            </div>
+          </div>
+          <div class="col-md-9 col-sm-8 col-xs-12 space-two-bottom clearfix">
+            <h3 class="legible nospace-top medium push-one-top pad-half darkblue">{{ item.title|safe }}</h3>
+            <div class="secondary space-three-bottom pad-half">
+              {{ item.blurb|safe }}
+              <ul class="list-plain secondary space-one-top">
+                {% if item.date %}<li>{{ item.date|safe }}</li>{% endif %}
+                {% if item.time %}<li>{{ item.time|safe }}</li>{% endif %}
+                {% if item.venue %}<li><i class="fa fa-map-marker"></i>&nbsp; {{ item.venue|safe }}</li>{% endif %}
+                <li><a target="_blank" href="https://juliacon.talkfunnel.com/2015/{{ item.id }}">Funnel Proposal</a></li>
+                {% if item.preview %}<li class="flushright"><a href="{{ item.preview }}">Preview</a></li>{% endif %}
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  {% endfor %}
+  </div>
+</section>
