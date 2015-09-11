@@ -8,18 +8,18 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="{% if page.description %}{{ page.description }}{% else %}JuliaCon: Julia Conference in Bangalore, India{% endif %}">
+<meta name="description" content="{% if page.description %}{{ page.description }}{% else %}JuliaCon India: Julia Conference in Bangalore, India{% endif %}">
 <meta name="author" content="HasGeek and friends">
 
-<meta property="og:title" content="JuliaCon 2015{% if page.title %} — {{ page.title }}{% endif %}"/>
+<meta property="og:title" content="JuliaCon India 2015{% if page.title %} — {{ page.title }}{% endif %}"/>
 <meta property="og:image" content="{{ request.url_root[:-1] }}{{ theme_static('img/logo.png') }}"/>
 <meta property="og:url" content="{{ request.url }}"/>
-<meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}JuliaCon: Julia Conference in Bangalore, India{% endif %}"/>
+<meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}JuliaCon India: Julia Conference in Bangalore, India{% endif %}"/>
 
 <link rel="shortcut icon" type="image/x-icon" href="{{ theme_static('img/favicon.ico') }}">
 <link rel="icon" type="image/x-icon" href="{{ theme_static('img/favicon.ico') }}">
 
-<title>{% if page.title %}{{ page.title }} — {% endif %}JuliaCon 2015</title>
+<title>{% if page.title %}{{ page.title }} — {% endif %}JuliaCon India 2015</title>
 
 {%- if _theme %}
   {% assets "css_" + _theme -%}
@@ -62,7 +62,7 @@
       <div class="col-sm-4 space-three-top space-one-bottom">
         <div class="flushright center-xs">
         {% block ticket_button %}
-<!--           <a href="https://in.explara.com/e/" class="button regular" title="JuliaCon 2015 Tickets on Explara" target="_blank">Buy Tickets</a> -->
+<!--           <a href="https://in.explara.com/e/" class="button regular" title="JuliaCon India 2015 Tickets on Explara" target="_blank">Buy Tickets</a> -->
         {% endblock %}
         </div>
       </div>
