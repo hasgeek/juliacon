@@ -326,7 +326,7 @@ header {
 }
 
 .logo-wrapper{
-  padding: 20px 10px 10px;
+  padding: 20px 10px 0;
 }
 @media(min-width:992px) {
   .logo-wrapper{
@@ -964,12 +964,14 @@ a.hasgeek-logo:hover { background-color: rgba(255,255,255,0.15); }
 .phone-menu h1.nav-logo {
   float: left;
   margin: 0;
+  width: 40%;
   padding: 5px 25px;
   line-height: 1;
   display: none;
+
 }
 .phone-menu h1.nav-logo img{
-  width: 40px;
+  max-height: 30px;
 }
 .nav-fixed .phone-menu h1.nav-logo {
   display: block;
@@ -987,7 +989,7 @@ a.hasgeek-logo:hover { background-color: rgba(255,255,255,0.15); }
 }
 .site-navbar nav {
   position: absolute;
-  top: 50px;
+  top: 60px;
   right: 10px;
   z-index: 9999;
   background-color: #2B2D42;
