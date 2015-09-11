@@ -964,11 +964,11 @@ a.hasgeek-logo:hover { background-color: rgba(255,255,255,0.15); }
 .phone-menu h1.nav-logo {
   float: left;
   margin: 0;
-  width: 40%;
-  padding: 5px 25px;
+  width: 75px;
+  padding: 5px 15px;
   line-height: 1;
   display: none;
-
+  text-align: left;
 }
 .phone-menu h1.nav-logo img{
   max-height: 30px;
@@ -979,7 +979,7 @@ a.hasgeek-logo:hover { background-color: rgba(255,255,255,0.15); }
 .menu {
   float: right;
   margin: 0;
-  padding: 15px 25px 0;
+  padding: 15px 15px 0;
   line-height: 1;
   cursor: pointer;
   color: #2B2D42;
