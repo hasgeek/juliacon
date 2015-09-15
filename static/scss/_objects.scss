@@ -31,10 +31,12 @@
   background-size: 200% 100%;
   transition: all .25s ease-in;
 }
-.button-ghost-dark:hover {
+.button-ghost-dark:hover, .button-ghost-dark:active,
+.button-ghost-dark:focus {
   background-position: 0 0;
   color:#fff;
   text-decoration: none;
+  outline: none;
 }
 
 .button-mini    { padding: 0.2em 0.6em; }
@@ -93,12 +95,12 @@
 }
 
 .ticket {
-  max-width: 1400px;
+  max-width: 2200px;
   margin: auto;
 }
 
 .ticket .box-front-side, .ticket .box-back-side {
-  height: 31em;
+  height: 25em;
   display: none;
   padding: 2em 0.7em;
   position: relative;
@@ -107,10 +109,6 @@
   -moz-transition: -moz-transform 1s;
   -o-transition: -o-transform 1s;
   transition: transform 1s;
-}
-
-.ticket .box1 .box-front-side, .ticket .box1 .box-back-side {
-  height: 40em;
 }
 
 .ticket .show-side{
@@ -127,35 +125,13 @@
 
 @media (min-width: 480px) {
   .ticket .box-front-side, .ticket .box-back-side {
-    height: 27em;
-  }
-
-  .ticket .box1 .box-front-side, .ticket .box1 .box-back-side {
-    height: 30em;
-  }
-}
-
-@media (min-width: 600px) {
-  .ticket .box1 .box-front-side, .ticket .box1 .box-back-side {
-    height: 33em;
+    height: 25em;
   }
 }
 
 @media (min-width: 992px) {
   .ticket .box-front-side, .ticket .box-back-side {
-    height: 33em;
-  }
-}
-
-@media (min-width: 1200px) {
-  .ticket .box-front-side, .ticket .box-back-side {
-    height: 37em;
-  }
-  .ticket .box1 .box-front-side, .ticket .box1 .box-back-side {
-    height: 37em;
-  }
-  .ticket .box3 .box-front-side, .ticket .box3 .box-back-side {
-    height: 37em;
+    height: 30em;
   }
 }
 
@@ -330,14 +306,10 @@ header {
 }
 @media(min-width:992px) {
   .logo-wrapper{
-    padding: 80px 0 20px;
+    padding: 60px 0 20px;
   }
 }
-@media(min-width:1200px) {
-  .logo-wrapper{
-    padding: 100px 0 20px;
-  }
-}
+
 header .logo {
     background: url(../img/logo.svg) no-repeat scroll center center;
     background-size: contain;

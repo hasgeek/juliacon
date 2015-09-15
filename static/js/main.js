@@ -405,8 +405,8 @@ $(document).ready(function() {
     });
 
     var formTarget;
-    var cancelSuccessMessage = 'We are sad that you wouldn&#39;t be able to come. Your cancellation request is being processed, you should receive a refund within 7 working days. Feel free to get in touch at <a href="mailto:info@hasgeek.com" class="link-silent orange">info@hasgeek.com</a> for further queries.';
-    var transferSuccessMessage = 'We are sad that you wouldn&#39;t be able to come. Your transfer request is being processed. Feel free to get in touch at <a href="mailto:info@hasgeek.com" class="link-silent orange">info@hasgeek.com</a> for further queries.';
+    var cancelSuccessMessage = 'We are sad that you wouldn&#39;t be able to come. Your cancellation request is being processed, you should receive a refund within 7 working days. Feel free to get in touch at <a href="mailto:info@hasgeek.com" class="link-silent softred">info@hasgeek.com</a> for further queries.';
+    var transferSuccessMessage = 'We are sad that you wouldn&#39;t be able to come. Your transfer request is being processed. Feel free to get in touch at <a href="mailto:info@hasgeek.com" class="link-silent softred">info@hasgeek.com</a> for further queries.';
 
     $('#cancelticket, #transferticket').on('submit', function(event) {
         event.preventDefault();
@@ -424,12 +424,12 @@ $(document).ready(function() {
         if(formDataValid) {
             if(formData["type"] === "Cancel") {
                 formTarget = "cancelticket";
-                postData =  { "Order no.": formData["order-no"], "Ticket no." : formData["ticket-no"],  "Email" : formData["ticket-email"], "Type" : formData["type"], "Event" : "JuliaCon 2015" };
+                postData =  { "Order no.": formData["order-no"], "Ticket no." : formData["ticket-no"],  "Email" : formData["ticket-email"], "Type" : formData["type"], "Event" : "JuliaCon India 2015" };
             }
             else {
                 formTarget = "transferticket";
                 postData = { "Order no.": formData["order-no"], "Ticket no." : formData["ticket-no"],  "Email" : formData["ticket-email"], "Type" : formData["type"], 
-                             "Transferee name" :formData["transferee-name"], "Transferee email" : formData["transferee-email"] , "Transferee phone" : formData["transferee-phone"], "Event" : "JuliaCon 2015" };
+                             "Transferee name" :formData["transferee-name"], "Transferee email" : formData["transferee-email"] , "Transferee phone" : formData["transferee-phone"], "Event" : "JuliaCon India 2015" };
             }
             p = "Are you sure you want to " + formData["type"] + " your ticket?";
             var result = window.confirm(p);
