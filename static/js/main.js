@@ -340,7 +340,6 @@ $(document).ready(function() {
     setTimeout(function() {
       $('.heading-text .text1').animate({right: 0}, 500);
       $('.heading-text .text2').animate({left: 0}, 500);
-      $('.heading-text .ticket-btn, .heading-text .transfer-links').animate({top: 0}, 500);
     }, 500);
 
     // For conference and workshop schedule
