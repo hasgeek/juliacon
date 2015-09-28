@@ -3284,13 +3284,19 @@ header .logo:hover, header .logo:focus, header .logo:active,
     padding: 0 10px;
   }
 }
+@media (min-width: 992px) and (max-width: 1200px) {
+  /* line 1065, ../scss/_objects.scss */
+  .site-navbar nav ul li a {
+    font-size: 13px;
+  }
+}
 /* Schedule */
-/* line 1066, ../scss/_objects.scss */
+/* line 1071, ../scss/_objects.scss */
 .schedule-container {
   max-width: 1000px;
 }
 
-/* line 1067, ../scss/_objects.scss */
+/* line 1072, ../scss/_objects.scss */
 .schedule-table {
   border: 1px solid #EAEAEA;
   width: 100%;
@@ -3299,41 +3305,41 @@ header .logo:hover, header .logo:focus, header .logo:active,
   background-color: #fff;
 }
 
-/* line 1070, ../scss/_objects.scss */
+/* line 1075, ../scss/_objects.scss */
 .schedule-table thead th.time {
   width: 12%;
   background-color: #CCC;
   padding: 1rem .5rem;
 }
 
-/* line 1071, ../scss/_objects.scss */
+/* line 1076, ../scss/_objects.scss */
 .schedule-table .track0 {
   width: 44%;
   background-color: #FFF;
   color: #CCC;
 }
 
-/* line 1072, ../scss/_objects.scss */
+/* line 1077, ../scss/_objects.scss */
 .schedule-table .track1 {
   width: 44%;
   background-color: #FFF;
   color: #CCC;
 }
 
-/* line 1073, ../scss/_objects.scss */
+/* line 1078, ../scss/_objects.scss */
 .schedule-table .tab-active {
   color: #222;
   background-color: #EEE;
 }
 
-/* line 1075, ../scss/_objects.scss */
+/* line 1080, ../scss/_objects.scss */
 .schedule-table tbody td {
   display: none;
   vertical-align: top;
   text-align: center;
 }
 
-/* line 1076, ../scss/_objects.scss */
+/* line 1081, ../scss/_objects.scss */
 .schedule-table tbody td.time {
   display: table-cell;
   background-color: #CCC;
@@ -3345,150 +3351,150 @@ header .logo:hover, header .logo:focus, header .logo:active,
   vertical-align: center;
 }
 
-/* line 1077, ../scss/_objects.scss */
+/* line 1082, ../scss/_objects.scss */
 .schedule-table tbody td.time p {
   line-height: 1;
   padding: 0;
   margin: 0;
 }
 
-/* line 1078, ../scss/_objects.scss */
+/* line 1083, ../scss/_objects.scss */
 .schedule-table tbody td.time-hide {
   padding: 0;
   background-color: transparent;
   border-bottom: 1px solid #ccc;
 }
 
-/* line 1079, ../scss/_objects.scss */
+/* line 1084, ../scss/_objects.scss */
 .schedule-table tbody tr:nth-last-child(2) td.time-hide:last-child {
   border-bottom: transparent;
 }
 
-/* line 1080, ../scss/_objects.scss */
+/* line 1085, ../scss/_objects.scss */
 .schedule-table tbody td.time-hide p {
   visibility: hidden;
 }
 
-/* line 1081, ../scss/_objects.scss */
+/* line 1086, ../scss/_objects.scss */
 .schedule-table td.track-0 {
   width: 44%;
   background-color: #EEE;
   padding: 0.7rem;
 }
 
-/* line 1082, ../scss/_objects.scss */
+/* line 1087, ../scss/_objects.scss */
 .schedule-table td.track-1 {
   width: 44%;
   background-color: #EEE;
   padding: 0.7rem;
 }
 
-/* line 1083, ../scss/_objects.scss */
+/* line 1088, ../scss/_objects.scss */
 .schedule-table tbody td h4 {
   margin: 0;
 }
 
-/* line 1084, ../scss/_objects.scss */
+/* line 1089, ../scss/_objects.scss */
 .schedule-table tbody td.centered {
   background-color: #EEE;
 }
 
-/* line 1085, ../scss/_objects.scss */
+/* line 1090, ../scss/_objects.scss */
 .schedule-table tbody td.centered {
   display: table-cell;
 }
 
-/* line 1086, ../scss/_objects.scss */
+/* line 1091, ../scss/_objects.scss */
 .schedule-table tbody td.tab-active {
   display: table-cell;
 }
 
-/* line 1087, ../scss/_objects.scss */
+/* line 1092, ../scss/_objects.scss */
 .js .funnel-schedule-link {
   display: none;
 }
 
-/* line 1088, ../scss/_objects.scss */
+/* line 1093, ../scss/_objects.scss */
 .no-js .schedule-container {
   display: none;
 }
 
-/* line 1089, ../scss/_objects.scss */
+/* line 1094, ../scss/_objects.scss */
 .no-js .schedule-table .fa-chevron-circle-down {
   display: none;
 }
 
-/* line 1090, ../scss/_objects.scss */
+/* line 1095, ../scss/_objects.scss */
 .schedule-table .fa-chevron-circle-down, .schedule-table .fa-chevron-circle-up {
   cursor: pointer;
   margin: 0 5px;
 }
 
-/* line 1091, ../scss/_objects.scss */
+/* line 1096, ../scss/_objects.scss */
 .js .schedule-table .description-text {
   display: none;
 }
 
-/* line 1092, ../scss/_objects.scss */
+/* line 1097, ../scss/_objects.scss */
 .js .schedule-table .description-text.show-text {
   display: block;
 }
 
 @media (max-width: 479px) {
-  /* line 1095, ../scss/_objects.scss */
+  /* line 1100, ../scss/_objects.scss */
   .schedule-table tbody td h4 {
     font-size: .8rem;
   }
 
-  /* line 1096, ../scss/_objects.scss */
+  /* line 1101, ../scss/_objects.scss */
   .schedule-table tbody td p {
     font-size: .6rem;
   }
 }
 @media only screen and (min-width: 768px) {
-  /* line 1099, ../scss/_objects.scss */
+  /* line 1104, ../scss/_objects.scss */
   .schedule-table thead th.time {
     width: 12%;
     background-color: #CCC;
     padding: 1rem .5rem;
   }
 
-  /* line 1100, ../scss/_objects.scss */
+  /* line 1105, ../scss/_objects.scss */
   .schedule-table thead th.track0 {
     width: 44%;
     background-color: #EEE;
     color: #222;
   }
 
-  /* line 1101, ../scss/_objects.scss */
+  /* line 1106, ../scss/_objects.scss */
   .schedule-table thead th.track1 {
     width: 44%;
     background-color: #DDD;
     color: #222;
   }
 
-  /* line 1102, ../scss/_objects.scss */
+  /* line 1107, ../scss/_objects.scss */
   .schedule-table tbody td.time {
     width: 12%;
     background-color: #CCC;
     padding: 2rem 1rem 1rem;
   }
 
-  /* line 1103, ../scss/_objects.scss */
+  /* line 1108, ../scss/_objects.scss */
   .schedule-table td.track-0 {
     width: 34%;
     background-color: #EEE;
     display: table-cell;
   }
 
-  /* line 1104, ../scss/_objects.scss */
+  /* line 1109, ../scss/_objects.scss */
   .schedule-table td.track-1 {
     width: 34%;
     background-color: #DDD;
     display: table-cell;
   }
 
-  /* line 1105, ../scss/_objects.scss */
+  /* line 1110, ../scss/_objects.scss */
   .schedule-table td.track-empty {
     width: 34%;
     background-color: #EEE;
@@ -3496,63 +3502,63 @@ header .logo:hover, header .logo:focus, header .logo:active,
   }
 }
 @media only screen and (min-width: 1024px) {
-  /* line 1108, ../scss/_objects.scss */
+  /* line 1113, ../scss/_objects.scss */
   .schedule-table th,
   .schedule-table tbody td {
     padding: 1rem;
   }
 }
-/* line 1112, ../scss/_objects.scss */
+/* line 1117, ../scss/_objects.scss */
 .expand-cancel-form {
   display: inline-block;
 }
 
-/* line 1115, ../scss/_objects.scss */
+/* line 1120, ../scss/_objects.scss */
 .expand-cancel-form:focus,
 .expand-cancel-form:active {
   outline: none;
 }
 
-/* line 1119, ../scss/_objects.scss */
+/* line 1124, ../scss/_objects.scss */
 .cancel-tickets, .cancelticket-status {
   display: none;
 }
 
-/* line 1122, ../scss/_objects.scss */
+/* line 1127, ../scss/_objects.scss */
 .cancel-tickets .radio-box {
   text-align: left;
 }
 
 @media (min-width: 768px) {
-  /* line 1126, ../scss/_objects.scss */
+  /* line 1131, ../scss/_objects.scss */
   .cancel-tickets .radio-box {
     text-align: right;
   }
 }
-/* line 1130, ../scss/_objects.scss */
+/* line 1135, ../scss/_objects.scss */
 .help-text {
   padding-left: 0;
 }
 
 @media (min-width: 768px) {
-  /* line 1134, ../scss/_objects.scss */
+  /* line 1139, ../scss/_objects.scss */
   .help-text {
     padding-left: 10px;
   }
 }
 @media (max-width: 479px) {
-  /* line 1140, ../scss/_objects.scss */
+  /* line 1145, ../scss/_objects.scss */
   #ticket-email, #cancel-ticket-email {
     font-size: 0.6rem;
   }
 }
-/* line 1145, ../scss/_objects.scss */
+/* line 1150, ../scss/_objects.scss */
 .submit-loader {
   padding: 0px 10px 5px;
   display: none;
 }
 
-/* line 1150, ../scss/_objects.scss */
+/* line 1155, ../scss/_objects.scss */
 .subscribe-input {
   background-color: #18A999;
   font-size: 18px;
@@ -3568,12 +3574,12 @@ header .logo:hover, header .logo:focus, header .logo:active,
 }
 
 @media (min-width: 480px) {
-  /* line 1164, ../scss/_objects.scss */
+  /* line 1169, ../scss/_objects.scss */
   .subscribe-input {
     width: 300px;
   }
 }
-/* line 1168, ../scss/_objects.scss */
+/* line 1173, ../scss/_objects.scss */
 .subscribe-button {
   background-color: #EF767A;
   font-size: 18px;
@@ -3587,7 +3593,7 @@ header .logo:hover, header .logo:focus, header .logo:active,
   margin: 0 0 5px;
 }
 
-/* line 1180, ../scss/_objects.scss */
+/* line 1185, ../scss/_objects.scss */
 .subscribe-button:active, .subscribe-button:focus,
 .subscribe-input:active, .subscribe-input:focus {
   outline: none;
@@ -3595,19 +3601,19 @@ header .logo:hover, header .logo:focus, header .logo:active,
   box-shadow: none;
 }
 
-/* line 1186, ../scss/_objects.scss */
+/* line 1191, ../scss/_objects.scss */
 .subscribe-button:active, .subscribe-button:focus,
 .subscribe-button:hover {
   background-color: #ea474e;
 }
 
-/* line 1190, ../scss/_objects.scss */
+/* line 1195, ../scss/_objects.scss */
 .ajax-loader {
   visibility: hidden;
   padding: 0px 10px 5px;
 }
 
-/* line 1194, ../scss/_objects.scss */
+/* line 1199, ../scss/_objects.scss */
 .helptext {
   height: 30px;
 }

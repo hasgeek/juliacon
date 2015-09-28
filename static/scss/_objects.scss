@@ -1061,6 +1061,11 @@ header .logo:hover, header .logo:focus, header .logo:active,
     padding: 0 10px;
   }
 }
+@media (min-width: 992px) and (max-width: 1200px) {
+  .site-navbar nav ul li a {
+    font-size: 13px;
+  }
+}
 
 /* Schedule */
 .schedule-container { max-width: 1000px; }
