@@ -544,14 +544,23 @@ header .logo:hover, header .logo:focus, header .logo:active,
     .credits .row-fluid .offset1 { margin-left: 0; }
 }
 
-.hasgeek-logo {
-    background: url(../img/hasgeek-logo.png) no-repeat scroll center center;
-    width:  130px;
-    height: 120px;
-    -webkit-border-radius: 30px 30px 30px 0;
-            border-radius: 30px 30px 30px 0;
+.organizer-logo a {
+  outline: none;
 }
-a.hasgeek-logo:hover { background-color: rgba(255,255,255,0.15); }
+.hasgeek-logo {
+  width: 50px;
+}
+.juliacomputing-logo {
+  width: 90px;
+}
+@media(min-width:600px) {
+  .hasgeek-logo {
+    width: 100px;
+  }
+  .juliacomputing-logo {
+    width: 140px;
+  }
+}
 
 .nav-tabs {
     border-bottom: 1px solid rgba(222, 214, 194, 0.15) ;
