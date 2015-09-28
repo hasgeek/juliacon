@@ -3562,12 +3562,18 @@ header .logo:hover, header .logo:focus, header .logo:active,
   box-shadow: none;
   margin: 0 5px 10px;
   padding: 0 10px;
-  width: 300px;
+  width: 250px;
   height: 42px;
   max-height: 42px;
 }
 
-/* line 1163, ../scss/_objects.scss */
+@media (min-width: 480px) {
+  /* line 1164, ../scss/_objects.scss */
+  .subscribe-input {
+    width: 300px;
+  }
+}
+/* line 1168, ../scss/_objects.scss */
 .subscribe-button {
   background-color: #EF767A;
   font-size: 18px;
@@ -3581,7 +3587,7 @@ header .logo:hover, header .logo:focus, header .logo:active,
   margin: 0 0 5px;
 }
 
-/* line 1175, ../scss/_objects.scss */
+/* line 1180, ../scss/_objects.scss */
 .subscribe-button:active, .subscribe-button:focus,
 .subscribe-input:active, .subscribe-input:focus {
   outline: none;
@@ -3589,19 +3595,19 @@ header .logo:hover, header .logo:focus, header .logo:active,
   box-shadow: none;
 }
 
-/* line 1181, ../scss/_objects.scss */
+/* line 1186, ../scss/_objects.scss */
 .subscribe-button:active, .subscribe-button:focus,
 .subscribe-button:hover {
   background-color: #ea474e;
 }
 
-/* line 1185, ../scss/_objects.scss */
+/* line 1190, ../scss/_objects.scss */
 .ajax-loader {
   visibility: hidden;
   padding: 0px 10px 5px;
 }
 
-/* line 1189, ../scss/_objects.scss */
+/* line 1194, ../scss/_objects.scss */
 .helptext {
   height: 30px;
 }
