@@ -3591,9 +3591,11 @@ header .logo:hover, header .logo:focus, header .logo:active,
   height: 42px;
   max-height: 42px;
   margin: 0 0 5px;
+  position: relative;
+  top: 2px;
 }
 
-/* line 1185, ../scss/_objects.scss */
+/* line 1187, ../scss/_objects.scss */
 .subscribe-button:active, .subscribe-button:focus,
 .subscribe-input:active, .subscribe-input:focus {
   outline: none;
@@ -3601,19 +3603,19 @@ header .logo:hover, header .logo:focus, header .logo:active,
   box-shadow: none;
 }
 
-/* line 1191, ../scss/_objects.scss */
+/* line 1193, ../scss/_objects.scss */
 .subscribe-button:active, .subscribe-button:focus,
 .subscribe-button:hover {
   background-color: #ea474e;
 }
 
-/* line 1195, ../scss/_objects.scss */
+/* line 1197, ../scss/_objects.scss */
 .ajax-loader {
   visibility: hidden;
   padding: 0px 10px 5px;
 }
 
-/* line 1199, ../scss/_objects.scss */
+/* line 1201, ../scss/_objects.scss */
 .helptext {
   height: 30px;
 }

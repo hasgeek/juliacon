@@ -1181,6 +1181,8 @@ header .logo:hover, header .logo:focus, header .logo:active,
   height: 42px;
   max-height: 42px;
   margin: 0 0 5px;
+  position: relative;
+  top: 2px;
 }
 .subscribe-button:active, .subscribe-button:focus,
 .subscribe-input:active, .subscribe-input:focus {
