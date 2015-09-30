@@ -3415,28 +3415,28 @@ header .logo:hover, header .logo:focus, header .logo:active,
 }
 
 /* line 1093, ../scss/_objects.scss */
-.no-js .schedule-container {
-  display: none;
-}
-
-/* line 1094, ../scss/_objects.scss */
 .no-js .schedule-table .fa-chevron-circle-down {
   display: none;
 }
 
-/* line 1095, ../scss/_objects.scss */
+/* line 1094, ../scss/_objects.scss */
 .schedule-table .fa-chevron-circle-down, .schedule-table .fa-chevron-circle-up {
   cursor: pointer;
   margin: 0 5px;
 }
 
-/* line 1096, ../scss/_objects.scss */
+/* line 1095, ../scss/_objects.scss */
 .js .schedule-table .description-text {
   display: none;
 }
 
-/* line 1097, ../scss/_objects.scss */
+/* line 1096, ../scss/_objects.scss */
 .js .schedule-table .description-text.show-text {
+  display: block;
+}
+
+/* line 1097, ../scss/_objects.scss */
+.schedule-table .expand {
   display: block;
 }
 
@@ -3500,65 +3500,70 @@ header .logo:hover, header .logo:focus, header .logo:active,
     background-color: #EEE;
     display: table-cell;
   }
+
+  /* line 1111, ../scss/_objects.scss */
+  .schedule-table .expand {
+    display: inline-block;
+  }
 }
 @media only screen and (min-width: 1024px) {
-  /* line 1113, ../scss/_objects.scss */
+  /* line 1114, ../scss/_objects.scss */
   .schedule-table th,
   .schedule-table tbody td {
     padding: 1rem;
   }
 }
-/* line 1117, ../scss/_objects.scss */
+/* line 1118, ../scss/_objects.scss */
 .expand-cancel-form {
   display: inline-block;
 }
 
-/* line 1120, ../scss/_objects.scss */
+/* line 1121, ../scss/_objects.scss */
 .expand-cancel-form:focus,
 .expand-cancel-form:active {
   outline: none;
 }
 
-/* line 1124, ../scss/_objects.scss */
+/* line 1125, ../scss/_objects.scss */
 .cancel-tickets, .cancelticket-status {
   display: none;
 }
 
-/* line 1127, ../scss/_objects.scss */
+/* line 1128, ../scss/_objects.scss */
 .cancel-tickets .radio-box {
   text-align: left;
 }
 
 @media (min-width: 768px) {
-  /* line 1131, ../scss/_objects.scss */
+  /* line 1132, ../scss/_objects.scss */
   .cancel-tickets .radio-box {
     text-align: right;
   }
 }
-/* line 1135, ../scss/_objects.scss */
+/* line 1136, ../scss/_objects.scss */
 .help-text {
   padding-left: 0;
 }
 
 @media (min-width: 768px) {
-  /* line 1139, ../scss/_objects.scss */
+  /* line 1140, ../scss/_objects.scss */
   .help-text {
     padding-left: 10px;
   }
 }
 @media (max-width: 479px) {
-  /* line 1145, ../scss/_objects.scss */
+  /* line 1146, ../scss/_objects.scss */
   #ticket-email, #cancel-ticket-email {
     font-size: 0.6rem;
   }
 }
-/* line 1150, ../scss/_objects.scss */
+/* line 1151, ../scss/_objects.scss */
 .submit-loader {
   padding: 0px 10px 5px;
   display: none;
 }
 
-/* line 1155, ../scss/_objects.scss */
+/* line 1156, ../scss/_objects.scss */
 .subscribe-input {
   background-color: #18A999;
   font-size: 18px;
@@ -3574,12 +3579,12 @@ header .logo:hover, header .logo:focus, header .logo:active,
 }
 
 @media (min-width: 480px) {
-  /* line 1169, ../scss/_objects.scss */
+  /* line 1170, ../scss/_objects.scss */
   .subscribe-input {
     width: 300px;
   }
 }
-/* line 1173, ../scss/_objects.scss */
+/* line 1174, ../scss/_objects.scss */
 .subscribe-button {
   background-color: #EF767A;
   font-size: 18px;
@@ -3595,7 +3600,7 @@ header .logo:hover, header .logo:focus, header .logo:active,
   top: 2px;
 }
 
-/* line 1187, ../scss/_objects.scss */
+/* line 1188, ../scss/_objects.scss */
 .subscribe-button:active, .subscribe-button:focus,
 .subscribe-input:active, .subscribe-input:focus {
   outline: none;
@@ -3603,19 +3608,19 @@ header .logo:hover, header .logo:focus, header .logo:active,
   box-shadow: none;
 }
 
-/* line 1193, ../scss/_objects.scss */
+/* line 1194, ../scss/_objects.scss */
 .subscribe-button:active, .subscribe-button:focus,
 .subscribe-button:hover {
   background-color: #ea474e;
 }
 
-/* line 1197, ../scss/_objects.scss */
+/* line 1198, ../scss/_objects.scss */
 .ajax-loader {
   visibility: hidden;
   padding: 0px 10px 5px;
 }
 
-/* line 1201, ../scss/_objects.scss */
+/* line 1202, ../scss/_objects.scss */
 .helptext {
   height: 30px;
 }
